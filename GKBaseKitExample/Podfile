@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+workspace 'GKBaseKitExample'
+
+target :'GKBaseKitExample' do
+    project 'GKBaseKitExample.xcodeproj'
+    platform :ios, '9.0'
+
+    pod 'GKBaseKit', :path => '../'
+
+    target :'GKBaseKitTests' do
+        pod 'Nimble', '~> 7.0.x'
+    end
+end

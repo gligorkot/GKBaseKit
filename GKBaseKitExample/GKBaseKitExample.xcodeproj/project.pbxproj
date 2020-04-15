@@ -204,12 +204,12 @@
 				TargetAttributes = {
 					86AB98862060A02B000E558F = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 					86AB989F2060A398000E558F = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 86AB98862060A02B000E558F;
 					};
@@ -260,23 +260,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GKBaseKitExample-GKBaseKitTests/Pods-GKBaseKitExample-GKBaseKitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GKBaseKitExample-GKBaseKitTests/Pods-GKBaseKitExample-GKBaseKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GKBaseKit/GKBaseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKBaseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKBaseKitExample-GKBaseKitTests/Pods-GKBaseKitExample-GKBaseKitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GKBaseKitExample-GKBaseKitTests/Pods-GKBaseKitExample-GKBaseKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		901BAE28A745B4FDB3BFEEFB /* [CP] Embed Pods Frameworks */ = {
@@ -284,21 +280,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GKBaseKitExample/Pods-GKBaseKitExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GKBaseKitExample/Pods-GKBaseKitExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GKBaseKit/GKBaseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKBaseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKBaseKitExample/Pods-GKBaseKitExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GKBaseKitExample/Pods-GKBaseKitExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8ED44E20ADF38F974AEE2DF /* [CP] Check Pods Manifest.lock */ = {
@@ -519,7 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.gligor.GKBaseKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -535,7 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.gligor.GKBaseKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -551,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.gligor.BaseKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKBaseKitExample.app/GKBaseKitExample";
 			};
@@ -567,7 +559,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.gligor.BaseKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKBaseKitExample.app/GKBaseKitExample";
 			};

@@ -11,6 +11,6 @@ target :'GKBaseKitExample' do
     pod 'GKBaseKit', :path => '../'
 
     target :'GKBaseKitTests' do
-        pod 'Nimble', '~> 7.0.x'
+        pod 'Nimble', '~> 8.x'
     end
 end

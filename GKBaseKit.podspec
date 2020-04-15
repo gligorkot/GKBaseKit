@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = 'GKBaseKit'
-  s.version               = '1.0.0'
+  s.version               = '1.0.1'
   s.summary               = 'GKBaseKit framework.'
   s.description           = <<-DESC
                             * GKBaseKit framework
@@ -15,8 +15,9 @@ Pod::Spec.new do |s|
   s.source                = { :git => 'https://github.com/gligorkot/GKBaseKit.git', :tag => s.version.to_s }
 
   s.source_files          = 'Classes/**', 'Classes/**/*.{swift}'
-  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '4.2' }
+  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '5.2' }
 
   s.requires_arc          = true
+  s.swift_versions        = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
 end

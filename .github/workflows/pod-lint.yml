@@ -20,4 +20,4 @@ jobs:
 
     - name: Pod lint
       run: pod lib lint
-      shell: zsh
+      shell: bash

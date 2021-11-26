@@ -7,8 +7,8 @@ jobs:
     runs-on: macos-10.15
     strategy:
       matrix:
-        # latest 10, 11 and all available 12 versions
-        xcodeVersions: ['10.3', '11.7', '12.0', '12.1', '12.2', '12.3', '12.4']
+        # latest 11 and all available versions 12
+        xcodeVersions: ['11.7', '12.0', '12.1', '12.2', '12.3', '12.4']
 
     steps:
     - name: Checkout
@@ -27,8 +27,8 @@ jobs:
     runs-on: macos-11
     strategy:
       matrix:
-        # latest 11 and 12 and all 13 versions
-        xcodeVersions: ['11.7', '12.5', '13.0', '13.1']
+        # latest 12 and all available versions 13
+        xcodeVersions: ['12.5', '13.0', '13.1']
 
     steps:
     - name: Checkout

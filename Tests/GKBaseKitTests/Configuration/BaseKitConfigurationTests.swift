@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Nimble
+import CwlPreconditionTesting
 @testable import GKBaseKit
 
 class BaseKitConfigurationTests: XCTestCase {
@@ -17,7 +17,7 @@ class BaseKitConfigurationTests: XCTestCase {
     }
 
     func test_configurationFatalErrorIfNotSetup() {
-        expect { _ = BaseKitConfiguration.shared }.to(throwAssertion())
+        let _ = catchBadInstruction { let _ = BaseKitConfiguration.shared }
     }
 
 }

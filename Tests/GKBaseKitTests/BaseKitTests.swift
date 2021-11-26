@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import GKBaseKit
 
 class BaseKitTests: XCTestCase {
@@ -18,20 +17,20 @@ class BaseKitTests: XCTestCase {
 
     func test_baseKitIsTrueByDefault() {
         BaseKit.initBaseKit()
-        expect(BaseKitConfiguration.shared.debug).toNot(beNil())
-        expect(BaseKit.isDebug()).to(beTrue())
+        XCTAssertNotNil(BaseKitConfiguration.shared.debug)
+        XCTAssertTrue(BaseKit.isDebug())
     }
 
     func test_baseKitIsTrueWhenDebugProtocolReturnsTrue() {
         BaseKit.initBaseKit(debug: TrueDebug())
-        expect(BaseKitConfiguration.shared.debug).toNot(beNil())
-        expect(BaseKit.isDebug()).to(beTrue())
+        XCTAssertNotNil(BaseKitConfiguration.shared.debug)
+        XCTAssertTrue(BaseKit.isDebug())
     }
 
     func test_baseKitIsFalseWhenDebugProtocolReturnsFalse() {
         BaseKit.initBaseKit(debug: FalseDebug())
-        expect(BaseKitConfiguration.shared.debug).toNot(beNil())
-        expect(BaseKit.isDebug()).to(beFalse())
+        XCTAssertNotNil(BaseKitConfiguration.shared.debug)
+        XCTAssertFalse(BaseKit.isDebug())
     }
     
 }

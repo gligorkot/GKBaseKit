@@ -19,11 +19,10 @@ final class BaseKitConfiguration {
     private var config: BaseKitConfigurationProtocol?
 
     private var configuration: BaseKitConfigurationProtocol {
-        if let config = config {
-            return config
-        } else {
+        guard let config = config else {
             preconditionFailure("GKBaseKit configuration must be setup before use")
         }
+        return config
     }
 
     class func setup(with config: BaseKitConfigurationProtocol) {

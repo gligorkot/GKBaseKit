@@ -3,11 +3,32 @@ name: Pod lint
 on: push
 
 jobs:
-  pod-lint:
-    runs-on: macos-latest
+  pod-lint-10_15:
+    runs-on: macos-10.15
     strategy:
       matrix:
-        xcodeVersions: ['10.3', '11.7.0', '12.0.1', '12.1.0', '12.1.1', '12.2.0', '12.3.0', '12.4.0']
+        # latest 10, 11 and all available 12 versions
+        xcodeVersions: ['10.3', '11.7', '12.0', '12.1', '12.2', '12.3', '12.4']
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    - name: Set up XCode Version
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ matrix.xcodeVersions }}
+
+    - name: Pod lint
+      run: pod lib lint
+      shell: bash
+
+  pod-lint-11:
+    runs-on: macos-11
+    strategy:
+      matrix:
+        # latest 11 and 12 and all 13 versions
+        xcodeVersions: ['11.7', '12.5', '13.0']
 
     steps:
     - name: Checkout

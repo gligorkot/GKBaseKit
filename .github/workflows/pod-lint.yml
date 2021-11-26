@@ -28,7 +28,7 @@ jobs:
     strategy:
       matrix:
         # latest 11 and 12 and all 13 versions
-        xcodeVersions: ['11.7', '12.5', '13.0']
+        xcodeVersions: ['11.7', '12.5', '13.0', '13.1']
 
     steps:
     - name: Checkout

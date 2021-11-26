@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = 'GKBaseKit'
-  s.version               = '2.0.0'
+  s.version               = '2.0.0-beta1'
   s.summary               = 'GKBaseKit framework.'
   s.description           = <<-DESC
                             * GKBaseKit framework

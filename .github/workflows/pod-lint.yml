@@ -1,6 +1,6 @@
 name: Pod lint
 
-on: push
+on: pull_request
 
 jobs:
   pod-lint-10_15:
